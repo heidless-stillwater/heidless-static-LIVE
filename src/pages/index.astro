@@ -7,14 +7,14 @@ import {
 
 import Portfolio from '@components/Portfolio/Portfolio.astro'
 
-import logo from '../../public/logo.svg?raw'
+import logo from '../../public/assets/logo.svg?raw'
 
 const layout = {
     seo: {
         title: 'Portfolio Template - Webcore',
         url: 'https://webcoreui.dev/',
         description: 'A customizable and easy to use template for portfolios.',
-        faviconUrl: '/logo.svg'
+        faviconUrl: '/assets/logo.svg'
     },
     menu: {
         logo: {
@@ -29,8 +29,8 @@ const layout = {
             {
                 title: 'Contacts',
                 items: [
-                    { href: 'mailto:josh@example.com', name: 'john@example.com' },
-                    { href: 'tel:+1 234 5678', name: '+1 234 5678' }
+                    { href: 'mailto:robcraig@scummingit.co.uk', name: 'robcraig@scummingit.co.uk' },
+                    { href: 'tel:+44 7802 522 257', name: '+44 XXXX XXX XXX' }
                 ]
             }
         ]
@@ -38,8 +38,8 @@ const layout = {
 }
 
 const hero = {
-    heading: 'Hey, I\'m Josh 👋',
-    subHeading: 'Senior React Developer based in Oregon',
+    heading: 'Rob Craig 👋',
+    subHeading: 'Full Stack Developer based in London',
     buttons: [
         { text: 'Call Me', theme: 'success' as ButtonProps['theme'] },
         { text: 'Send an Email', theme: 'outline' as ButtonProps['theme'] }
@@ -59,7 +59,7 @@ const hero = {
 
 const aboutMe = {
     title: 'More About Me',
-    text: 'Description about the person, including previous work experiences, studies, and relevant projects. Anything that can establish credibility, experience, and expertise should be listed here to instill trustworthiness in the visitor. This field can also handle <code>HTML</code> tags for further formatting.',
+    text: 'Returning Developer from Scrum-Master/Dev background. Long term IT professional. Spent past 2+ years tooling up for own SaaS operation. With focus on Google Data Analytics Certification and Dev with RubyOnRails; Python; Postgres, GCP. I am looking for a role that would enable me to calibrate my skills while adding value to the initiative from Day 1. This will ideally involve a backend role with exposure to SaaS, Data Analytics & AI.',
     img: {
         src: '/img/avatar.png',
         alt: 'About me',
@@ -67,12 +67,12 @@ const aboutMe = {
         height: 250
     },
     services: [
-        'List of services provided by the person',
-        'Broken into two columns on larger screens',
-        'Define a list of ratings',
-        'Create CTAs between blocks',
-        'Add your previous work',
-        'Provide a list of services'
+        'Ruby on Rails',
+        'Python',
+        'React/NextJS',
+        'PostgreSQL',
+        'GCP/AWS',
+        'Data Analytics/Machine'
     ].map(feature => ({
         icon: 'circle-check',
         color: 'var(--w-color-success)',
@@ -80,34 +80,8 @@ const aboutMe = {
     }))
 }
 
-const ratings = [
-    {
-        score: 5,
-        showText: true,
-        text: 'Rated for result',
-        feedback: '"He did an excellent job. The end result is what we wanted."'
-    },
-    {
-        score: 5,
-        showText: true,
-        text: 'Rated for design',
-        feedback: '"A thorough, reliable, precise professional who is demanding in his work! I can only recommend him!"'
-    },
-    {
-        score: 5,
-        showText: true,
-        text: 'Rated for communication',
-        feedback: '"Thank you for your work! It turned out very nice!"'
-    }
-]
-
-const ratingCta = {
-    text: 'More reviews',
-    theme: 'secondary' as ButtonProps['theme']
-}
-
 const myWork = {
-    title: 'My Most Recent Work',
+    title: 'Portfolio links & Info',
     items: Array
         .from({ length: 3 }, (_, i) => i + 1)
         .map(i => ({
@@ -152,15 +126,13 @@ const servicesCta = {
     layout={layout}
     hero={hero}
     aboutMe={aboutMe}
-    ratings={ratings}
-    ratingCta={ratingCta}
     myWork={myWork}
     services={services}
     servicesCta={servicesCta}
 >
     <div slot="menu">
-        <a href="tel:+1 234 5678">+1 234 5678</a>
+        <a href="tel:+44 7802 522 257">+XX XXXX XXX XXX</a>
         <span>•</span>
-        <a href="mailto:josh@example.com">josh@example.com</a>
+        <a href="mailto:robcraig@scrummingit.co.uk">robcraig@scrummingit.co.uk</a>
     </div>
 </Portfolio>
