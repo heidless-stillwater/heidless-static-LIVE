@@ -81,6 +81,50 @@ const aboutMe = {
 }
 
 const myWork = {
+  title: 'Resources',
+  items: 
+    [
+      { 
+        href: 'https://main--scrumming-it.netlify.app/',
+        target: '_blank',
+        img: {
+            src: `/img/placeholder1.png`,
+            alt: 'img',
+            width: 500,
+            height: 250
+        },
+        title: `Rob\'s Blog`,
+        text: 'Portfolio Partner Blog'
+      },
+      { 
+        href: '#',
+        target: '_blank',
+        img: {
+            src: `/img/placeholder2.png`,
+            alt: 'img',
+            width: 500,
+            height: 250
+        },
+        title: `Portfolio Site (React/NextJS)`,
+        text: 'You can create as many items as necessary with icons and an optional title. You can also configure the number of columns.'
+      },
+      { 
+        href: '#',
+        target: '_blank',
+        img: {
+            src: `/img/placeholder3.png`,
+            alt: 'img',
+            width: 500,
+            height: 250
+        },
+        title: `Dashboard: US Population #1`,
+        text: 'You can also pass <b>HTML</b> tags to your cards.'
+      }
+    ]
+}
+
+
+const myWorkOrig = {
     title: 'Portfolio links & Info',
     items: Array
         .from({ length: 3 }, (_, i) => i + 1)
@@ -103,6 +147,31 @@ const services = {
         {
             icon: 'components',
             title: 'Rob\'s Blog',
+            text: 'Use the <code>GridWithIcons</code> block to organize your list into a grid with icons to enhance clarity and visual appeal.',
+            img: {
+                src: `/img/placeholder1.png`,
+                alt: 'img',
+                width: 500,
+                height: 250
+            },
+        }, {
+            icon: 'alert',
+            title: 'Portfolio Site (React/NextJS)',
+            text: 'You can create as many items as necessary with icons and an optional title. You can also configure the number of columns.'
+        }, {
+            icon: 'circle-check',
+            title: 'Supports formatting',
+            text: 'The <code>text</code> prop also supports formatting through <b>HTML</b> tags to help you customize the appearance of the element.'
+        }
+    ]
+}
+
+const services0 = {
+    secondary: true,
+    items: [
+        {
+            icon: 'components',
+            title: 'Rob\'s Blog TESTER',
             text: 'Use the <code>GridWithIcons</code> block to organize your list into a grid with icons to enhance clarity and visual appeal.'
         }, {
             icon: 'alert',
