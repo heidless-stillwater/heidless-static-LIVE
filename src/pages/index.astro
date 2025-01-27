@@ -29,8 +29,8 @@ const layout = {
             {
                 title: 'Contacts',
                 items: [
-                    { href: 'mailto:robcraig@scummingit.co.uk', name: 'robcraig@scummingit.co.uk' },
-                    { href: 'tel:+44 7802 522 257', name: '+44 XXXX XXX XXX' }
+                    { href: 'mailto:lockhart.r@gmail.com', name: 'lockhart.r@gmail.com' },
+                    { href: 'tel:+44 XXXX XXX XXX', name: '+44 XXXX XXX XXX' }
                 ]
             }
         ]
@@ -41,8 +41,8 @@ const hero = {
     heading: 'Rob Craig 👋',
     subHeading: 'Full Stack Developer based in London',
     buttons: [
-        { text: 'Call Me', theme: 'success' as ButtonProps['theme'] },
-        { text: 'Send an Email', theme: 'outline' as ButtonProps['theme'] }
+        // { text: 'Call Me', theme: 'success' as ButtonProps['theme'] },
+        { text: 'Email', theme: 'outline' as ButtonProps['theme'] }
     ],
     badge: {
         rounded: true,
@@ -58,8 +58,8 @@ const hero = {
 }
 
 const aboutMe = {
-    title: 'More About Me',
-    text: 'Returning Developer from Scrum-Master/Dev background. Long term IT professional. Spent past 2+ years tooling up for own SaaS operation. With focus on Google Data Analytics Certification and Dev with RubyOnRails; Python; Postgres, GCP. I am looking for a role that would enable me to calibrate my skills while adding value to the initiative from Day 1. This will ideally involve a backend role with exposure to SaaS, Data Analytics & AI.',
+    title: 'About',
+    text: 'Returning Developer from Scrum-Master/Dev background. Long term IT professional. Spent past 2+ years tooling up for own SaaS operation. \n With focus on Google Data Analytics Certification and Dev with RubyOnRails; Python; Postgres, GCP. I am looking for a role that would enable me to calibrate my skills while adding significant value.',
     img: {
         src: '/img/avatar.png',
         alt: 'About me',
@@ -97,7 +97,7 @@ const myWork = {
         text: 'Portfolio Partner Blog'
       },
       { 
-        href: '#',
+        href: 'https://pfolio-frontend-v1-svc-b572hemhnq-nw.a.run.app/',
         target: '_blank',
         img: {
             src: `/img/placeholder2.png`,
@@ -105,11 +105,11 @@ const myWork = {
             width: 500,
             height: 250
         },
-        title: `Portfolio Site (React/NextJS)`,
-        text: 'You can create as many items as necessary with icons and an optional title. You can also configure the number of columns.'
+        title: `Portfolio Site`,
+        text: 'Ruby on Rails, React, NextJS, Astro, Python, GCP and more'
       },
       { 
-        href: '#',
+        href: 'https://pfolio-frontend-v2-svc-58856964484.europe-west2.run.app/#portfolios',
         target: '_blank',
         img: {
             src: `/img/placeholder3.png`,
@@ -117,8 +117,8 @@ const myWork = {
             width: 500,
             height: 250
         },
-        title: `Dashboard: US Population #1`,
-        text: 'You can also pass <b>HTML</b> tags to your cards.'
+        title: `Sample Projects`,
+        text: 'What have I been working on?'
       }
     ]
 }
@@ -146,7 +146,7 @@ const services = {
     items: [
         {
             icon: 'components',
-            title: 'Rob\'s Blog',
+            title: 'AirBnB Clone - WIP (Ruby on Rails)',
             text: 'Use the <code>GridWithIcons</code> block to organize your list into a grid with icons to enhance clarity and visual appeal.',
             img: {
                 src: `/img/placeholder1.png`,
@@ -156,11 +156,11 @@ const services = {
             },
         }, {
             icon: 'alert',
-            title: 'Portfolio Site (React/NextJS)',
+            title: 'Portfolio Site (dJango/React/NextJS) ',
             text: 'You can create as many items as necessary with icons and an optional title. You can also configure the number of columns.'
         }, {
             icon: 'circle-check',
-            title: 'Supports formatting',
+            title: 'Streamlit Data Apps (Python)',
             text: 'The <code>text</code> prop also supports formatting through <b>HTML</b> tags to help you customize the appearance of the element.'
         }
     ]
@@ -196,12 +196,10 @@ const servicesCta = {
     hero={hero}
     aboutMe={aboutMe}
     myWork={myWork}
-    services={services}
-    servicesCta={servicesCta}
 >
     <div slot="menu">
-        <a href="tel:+44 7802 522 257">+XX XXXX XXX XXX</a>
-        <span>•</span>
-        <a href="mailto:robcraig@scrummingit.co.uk">robcraig@scrummingit.co.uk</a>
+        <!-- <a href="tel:+44 7802 522 257">+XX XXXX XXX XXX</a>
+        <span>•</span> -->
+        <a href="mailto:lockhart.r@gmail.com">lockhart.r@gmail.com</a>
     </div>
 </Portfolio>
